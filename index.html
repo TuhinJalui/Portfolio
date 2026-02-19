@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">MyPortfolio</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <nav>
+        <ul id="menu">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+        <img src="new.jpeg" alt="Profile Picture">
+        <div>
+            <h1>
+                Hello! I am a passionate web developer who enjoys building
+                responsive and modern websites using HTML and CSS.
+            </h1>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-grid">
+
+        <div class="card">
+            
+            <h3>Financial Goal Tracker</h3>
+            <p>"A smart financial goal tracker that helps users plan, save, and achieve their dreams with real-time progress insights"</p>
+            <a href="https://github.com/TuhinJalui/Financial-Goal-Tracker">View Project</a>
+        </div>
+
+        <div class="card">
+            <img src="Screenshot 2026-02-19 175555.png" alt="Project">
+            <h3>FinQuest</h3>
+            <p>“A Gamified Platform for Enhancing Financial Literacy Among Young Adults”</p>
+            <a href="https://hook-shush-37808004.figma.site/">View Project</a>
+        </div>
+
+        <div class="card">
+            <h3>Taxwise</h3>
+            <p>"An AI-powered personal finance platform that brings tax filing + credit score management into one unified, intuitive space"</p>
+            <a href="https://github.com/TuhinJalui/Taxwise1">View Project</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Message</label>
+        <textarea rows="5" placeholder="Write your message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social-links">
+    <a href="https://www.linkedin.com/in/tuhin-jalui-613876333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" 
+   target="_blank" 
+   class="linkedin-link">
+    <i class="fab fa-linkedin-in"></i>
+</a>
+
+    <a href="https://github.com/TuhinJalui" target="_blank" class="github-link">
+    <i class="fab fa-github"></i>
+     </a>
+    </div>
+    <p>© 2026 MyPortfolio | All Rights Reserved</p>
+</footer>
+
+<script>
+function toggleMenu(){
+    document.getElementById("menu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>
